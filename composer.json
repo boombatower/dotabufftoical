@@ -1,0 +1,16 @@
+{
+    "name": "boombatower/dotabufftoical",
+    "description": "Converts dotabuff match history to iCal events.",
+    "authors": [
+        {
+            "name": "Jimmy Berry",
+            "email": "jimmy@boombatower.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "eluceo/ical": "^0.10.1",
+        "guzzlehttp/guzzle": "6.*",
+        "symfony/dom-crawler": "3.*"
+    }
+}
