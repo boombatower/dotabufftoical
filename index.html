@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Dotabuff to iCal</title>
+  </head>
+  <body>
+    <ol>
+      <li>Navigate to player on dotabuff.com
+      <li>Locate player ID in URL (example http://www.dotabuff.com/players/36213633 would be 36213633)
+      <li>Either paste into box and press enter and use downloaded iCal file
+      <li>OR append ical.php?player={number} to the current domain
+    </ol>
+    <form action="ical.php">
+      <input type="text" name="player">
+      <button type="submit">Generate</button>
+    </form>
+    Source code at <a href="https://github.com/boombatower/dotabufftoical">https://github.com/boombatower/dotabufftoical</a>
+  </body>
+</html>
