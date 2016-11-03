@@ -38,11 +38,11 @@ $crawler = new Crawler((string) $html);
 // Extract match start times and durations.
 // Two separate xpaths instead of loop over rows since crawler is convoluted
 // when compared to simplexml...which I should have just used.
-$dates = $crawler->filterXPath('//table[1]//time')->each(function(Crawler $item) {
+$dates = $crawler->filterXPath('//table[2]//time')->each(function(Crawler $item) {
   return $item->attr('datetime');
 });
 
-$durations = $crawler->filterXPath('//table[1]//tr/td[5]')->each(function(Crawler $item) {
+$durations = $crawler->filterXPath('//table[2]//tr/td[6]')->each(function(Crawler $item) {
   return $item->text();
 });
 
